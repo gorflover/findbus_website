@@ -25,14 +25,14 @@
   --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
   --radius: 12px;
 }
-
+ 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
 html { 
   scroll-behavior: smooth;
   font-size: 16px;
 }
-
+ 
 body {
   font-family: 'Noto Sans TC', sans-serif;
   color: var(--charcoal);
@@ -40,7 +40,7 @@ body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
-
+ 
 /* ===== HERO ===== */
 .hero {
   min-height: 92vh;
@@ -55,7 +55,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-
+ 
 .hero::before {
   content: '';
   position: absolute;
@@ -66,7 +66,7 @@ body {
   background: radial-gradient(ellipse, rgba(6,214,160,0.12) 0%, transparent 70%);
   pointer-events: none;
 }
-
+ 
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -82,7 +82,7 @@ body {
   margin-bottom: 1.8rem;
   animation: fadeDown 0.6s ease-out;
 }
-
+ 
 .hero-badge::before {
   content: '';
   width: 6px;
@@ -91,12 +91,12 @@ body {
   background: var(--green-bright);
   animation: pulse 2s infinite;
 }
-
+ 
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.4; }
 }
-
+ 
 .hero h1 {
   font-size: clamp(2rem, 6vw, 3.2rem);
   font-weight: 900;
@@ -105,11 +105,11 @@ body {
   letter-spacing: -0.02em;
   animation: fadeDown 0.6s ease-out 0.1s both;
 }
-
+ 
 .hero h1 span {
   color: var(--green-bright);
 }
-
+ 
 .hero-sub {
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   font-weight: 400;
@@ -119,7 +119,7 @@ body {
   line-height: 1.8;
   animation: fadeDown 0.6s ease-out 0.2s both;
 }
-
+ 
 .cta-btn {
   display: inline-flex;
   align-items: center;
@@ -135,17 +135,17 @@ body {
   box-shadow: 0 4px 20px rgba(6,199,85,0.35);
   animation: fadeDown 0.6s ease-out 0.3s both;
 }
-
+ 
 .cta-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 28px rgba(6,199,85,0.45);
 }
-
+ 
 .cta-btn svg {
   width: 22px;
   height: 22px;
 }
-
+ 
 .hero-scroll {
   position: absolute;
   bottom: 2rem;
@@ -154,17 +154,17 @@ body {
   letter-spacing: 0.1em;
   animation: bounce 2s infinite;
 }
-
+ 
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(6px); }
 }
-
+ 
 @keyframes fadeDown {
   from { opacity: 0; transform: translateY(-16px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
+ 
 /* ===== PROBLEM ===== */
 .problem {
   padding: 5rem 1.5rem;
@@ -172,7 +172,7 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-
+ 
 .section-label {
   font-size: 0.78rem;
   font-weight: 700;
@@ -181,7 +181,7 @@ body {
   color: var(--green-mid);
   margin-bottom: 1rem;
 }
-
+ 
 .problem h2 {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 900;
@@ -189,13 +189,13 @@ body {
   margin-bottom: 1.5rem;
   letter-spacing: -0.01em;
 }
-
+ 
 .problem p {
   font-size: 1.05rem;
   color: var(--slate);
   line-height: 1.9;
 }
-
+ 
 .problem .highlight-box {
   background: var(--white);
   border-left: 3px solid var(--green-bright);
@@ -207,40 +207,40 @@ body {
   color: var(--slate);
   box-shadow: var(--shadow-sm);
 }
-
+ 
 .highlight-box strong {
   color: var(--green-deep);
 }
-
+ 
 /* ===== STEPS ===== */
 .steps {
   padding: 5rem 1.5rem;
   background: var(--white);
 }
-
+ 
 .steps-inner {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
-
+ 
 .steps h2 {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 900;
   margin-bottom: 3rem;
   letter-spacing: -0.01em;
 }
-
+ 
 .steps-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
-
+ 
 @media (min-width: 640px) {
   .steps-grid { grid-template-columns: repeat(3, 1fr); }
 }
-
+ 
 .step-card {
   background: var(--cream);
   border-radius: var(--radius);
@@ -249,11 +249,11 @@ body {
   position: relative;
   transition: transform 0.2s ease;
 }
-
+ 
 .step-card:hover {
   transform: translateY(-3px);
 }
-
+ 
 .step-num {
   width: 40px;
   height: 40px;
@@ -267,26 +267,26 @@ body {
   justify-content: center;
   margin-bottom: 1rem;
 }
-
+ 
 .step-card h3 {
   font-size: 1.05rem;
   font-weight: 700;
   margin-bottom: 0.6rem;
 }
-
+ 
 .step-card p {
   font-size: 0.92rem;
   color: var(--mist);
   line-height: 1.6;
 }
-
+ 
 /* ===== WHY CHEAPER ===== */
 .why {
   padding: 5rem 1.5rem;
   max-width: 680px;
   margin: 0 auto;
 }
-
+ 
 .why h2 {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 900;
@@ -294,25 +294,25 @@ body {
   text-align: center;
   letter-spacing: -0.01em;
 }
-
+ 
 .why-content {
   background: var(--white);
   border-radius: var(--radius);
   padding: 2rem;
   box-shadow: var(--shadow-sm);
 }
-
+ 
 .why-item {
   display: flex;
   gap: 1rem;
   align-items: flex-start;
   padding: 1rem 0;
 }
-
+ 
 .why-item + .why-item {
   border-top: 1px solid rgba(0,0,0,0.05);
 }
-
+ 
 .why-icon {
   width: 36px;
   height: 36px;
@@ -325,37 +325,37 @@ body {
   flex-shrink: 0;
   font-size: 1.1rem;
 }
-
+ 
 .why-item h4 {
   font-size: 0.95rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
 }
-
+ 
 .why-item p {
   font-size: 0.9rem;
   color: var(--mist);
   line-height: 1.6;
 }
-
+ 
 /* ===== TRUST ===== */
 .trust {
   padding: 4rem 1.5rem;
   background: var(--white);
   text-align: center;
 }
-
+ 
 .trust-inner {
   max-width: 600px;
   margin: 0 auto;
 }
-
+ 
 .trust h2 {
   font-size: clamp(1.3rem, 3.5vw, 1.8rem);
   font-weight: 900;
   margin-bottom: 1.5rem;
 }
-
+ 
 .trust-badges {
   display: flex;
   flex-wrap: wrap;
@@ -363,7 +363,7 @@ body {
   justify-content: center;
   margin-bottom: 2rem;
 }
-
+ 
 .badge {
   display: inline-flex;
   align-items: center;
@@ -375,19 +375,19 @@ body {
   font-size: 0.85rem;
   font-weight: 500;
 }
-
+ 
 .badge svg {
   width: 15px;
   height: 15px;
 }
-
+ 
 .trust-note {
   font-size: 0.92rem;
   color: var(--mist);
   line-height: 1.7;
   margin-bottom: 2rem;
 }
-
+ 
 .trust-meet {
   display: inline-flex;
   align-items: center;
@@ -400,21 +400,21 @@ body {
   color: var(--slate);
   font-weight: 500;
 }
-
+ 
 /* ===== FAQ ===== */
 .faq {
   padding: 4rem 1.5rem;
   max-width: 640px;
   margin: 0 auto;
 }
-
+ 
 .faq h2 {
   font-size: clamp(1.3rem, 3.5vw, 1.8rem);
   font-weight: 900;
   margin-bottom: 2rem;
   text-align: center;
 }
-
+ 
 .faq-item {
   background: var(--white);
   border-radius: var(--radius);
@@ -422,20 +422,20 @@ body {
   margin-bottom: 0.8rem;
   box-shadow: var(--shadow-sm);
 }
-
+ 
 .faq-q {
   font-weight: 700;
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
   color: var(--charcoal);
 }
-
+ 
 .faq-a {
   font-size: 0.9rem;
   color: var(--mist);
   line-height: 1.7;
 }
-
+ 
 /* ===== CTA BOTTOM ===== */
 .cta-bottom {
   padding: 5rem 1.5rem;
@@ -443,23 +443,23 @@ body {
   background: linear-gradient(160deg, var(--green-deep) 0%, var(--green-mid) 100%);
   color: var(--white);
 }
-
+ 
 .cta-bottom h2 {
   font-size: clamp(1.5rem, 4vw, 2.2rem);
   font-weight: 900;
   margin-bottom: 0.8rem;
 }
-
+ 
 .cta-bottom p {
   opacity: 0.8;
   margin-bottom: 2rem;
   font-size: 1rem;
 }
-
+ 
 .cta-bottom .cta-btn {
   animation: none;
 }
-
+ 
 /* ===== FOOTER ===== */
 footer {
   padding: 2rem 1.5rem;
@@ -468,16 +468,16 @@ footer {
   color: var(--mist);
   background: var(--charcoal);
 }
-
+ 
 footer a {
   color: var(--green-bright);
   text-decoration: none;
 }
-
+ 
 footer .footer-contact {
   margin-top: 0.5rem;
 }
-
+ 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 480px) {
   .hero { min-height: 85vh; padding: 2rem 1.2rem; }
@@ -488,19 +488,19 @@ footer .footer-contact {
 </style>
 </head>
 <body>
-
+ 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-badge">服務進行中</div>
   <h1>社團包車<br><span>不用多花冤枉錢</span></h1>
   <p class="hero-sub">我們有一般管道找不到的車源，幫你拿到更划算的價格。報價透明，沒有隱藏費用。</p>
-  <a href="https://lin.ee/findbus" class="cta-btn">
+  <a href="https://line.me/ti/p/@findbus" class="cta-btn">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
     LINE 諮詢
   </a>
   <div class="hero-scroll">↓ 往下了解更多</div>
 </section>
-
+ 
 <!-- PROBLEM -->
 <section class="problem">
   <div class="section-label">你知道嗎</div>
@@ -510,7 +510,7 @@ footer .footer-contact {
     <strong>實際案例：</strong>同一條路線，一般管道報價 28,000 元，透過我們的車源網絡只要 25,000 元——<strong>省下 3,000 元</strong>，車輛規格完全相同。
   </div>
 </section>
-
+ 
 <!-- STEPS -->
 <section class="steps">
   <div class="steps-inner">
@@ -534,7 +534,7 @@ footer .footer-contact {
     </div>
   </div>
 </section>
-
+ 
 <!-- WHY CHEAPER -->
 <section class="why">
   <h2>為什麼我們能更便宜？</h2>
@@ -562,7 +562,7 @@ footer .footer-contact {
     </div>
   </div>
 </section>
-
+ 
 <!-- TRUST -->
 <section class="trust">
   <div class="trust-inner">
@@ -587,7 +587,7 @@ footer .footer-contact {
     </div>
   </div>
 </section>
-
+ 
 <!-- FAQ -->
 <section class="faq">
   <h2>常見問題</h2>
@@ -604,24 +604,24 @@ footer .footer-contact {
     <div class="faq-a">通常在 1–2 個工作天內回覆。急件可以打電話直接聯繫。</div>
   </div>
 </section>
-
+ 
 <!-- CTA BOTTOM -->
 <section class="cta-bottom">
   <h2>下次社團出遊前，先問問我們</h2>
   <p>一則 LINE 訊息，可能幫社團省下好幾千塊</p>
-  <a href="https://lin.ee/findbus" class="cta-btn">
+  <a href="https://line.me/ti/p/@findbus" class="cta-btn">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
     LINE 諮詢
   </a>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <div>© 2026 FindBus 找巴</div>
   <div class="footer-contact">
-    <a href="https://lin.ee/findbus">LINE 官方帳號</a> ・ 聯絡電話：09xx-454-767
+    <a href="https://line.me/ti/p/@findbus">LINE 官方帳號</a> ・ 聯絡電話：0966-454-767
   </div>
 </footer>
-
+ 
 </body>
 </html>
