@@ -155,6 +155,7 @@ body::after {
   color: var(--gold);
   line-height: 1;
   letter-spacing: -0.02em;
+  font-family: Georgia, 'Times New Roman', serif;
 }
 .card-price .unit { font-size: 13px; color: var(--text-dim); margin-left: 4px; }
 .card-addon-hint {
@@ -319,6 +320,7 @@ body::after {
   font-size: 20px; font-weight: 800;
   color: var(--text-dim); transition: color .3s; opacity: .5;
   letter-spacing: -0.01em;
+  font-family: Georgia, 'Times New Roman', serif;
 }
 .addon-toggle.active .addon-price-text { color: var(--gold); opacity: 1; }
 .addon-switch {
@@ -462,7 +464,7 @@ body::after {
         <span class="card-route-arrow">→</span>
         <span class="card-route-text">台中</span>
       </div>
-      <div class="card-detail">回程・散場直達不繞路</div>
+      <div class="card-detail">回程・散場直達</div>
       <div class="card-price-row">
         <div class="card-price">
           <span class="currency">NT$</span>
@@ -473,8 +475,8 @@ body::after {
       </div>
     </div>
     <div class="card-seats">
-      <div class="seats-bar"><div class="seats-fill" id="seatsFill" style="width:18%"></div></div>
-      <span id="seatsText">6/34 人已報名・20 人成團</span>
+      <div class="seats-bar"><div class="seats-fill" id="seatsFill" style="width:0%"></div></div>
+      <span id="seatsText">0/8 人已報名</span>
     </div>
 
     <button class="cta-btn" id="ctaBtn" onclick="expandPanel()">
@@ -484,18 +486,15 @@ body::after {
 
     <div class="expand-panel" id="expandPanel">
       <div class="panel-inner">
-        <div class="panel-divider"></div>
-
         <div class="rules-title">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           搭車須知
         </div>
         <ul class="rules-list">
-          <li>散場後 30 分鐘於體育館正門停車場集合，逾時不候</li>
+          <li>散場後 30 分鐘於林口體育館周邊指定地點集合，逾時不候</li>
           <li>上車前以 LINE 核對姓名，請確保報名資料正確</li>
           <li>車上禁止飲酒、吸菸，請維持車內整潔</li>
-          <li>未滿 20 人不開車，已繳費用全額退還</li>
-          <li>合法營業遊覽車・34 人座・含乘客險</li>
+          <li>車型為舒適高檔九人座車／豪華三排座椅大巴・含乘客險</li>
         </ul>
 
         <div class="agree-row" id="agreeRow" onclick="toggleAgree()">
@@ -514,15 +513,15 @@ body::after {
 
           <div class="form-group">
             <label>姓名</label>
-            <input type="text" id="name" autocomplete="name" placeholder="請填本名（方便司機核對）">
+            <input type="text" id="name" autocomplete="name">
           </div>
           <div class="form-group">
             <label>電話</label>
-            <input type="tel" id="phone" inputmode="numeric" autocomplete="tel" placeholder="09xxxxxxxx">
+            <input type="tel" id="phone" inputmode="numeric" autocomplete="tel">
           </div>
           <div class="form-group">
             <label>LINE ID <span style="opacity:.5;font-weight:400;">（選填）</span></label>
-            <input type="text" id="lineId" placeholder="方便我們加你好友">
+            <input type="text" id="lineId">
           </div>
 
           <div class="addon-section">
@@ -573,7 +572,7 @@ body::after {
         <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
         <div class="info-content">
           <dt>集合地點</dt>
-          <dd>林口體育館（國立體育大學）正門停車場</dd>
+          <dd>林口體育館周邊指定地點集合</dd>
         </div>
       </div>
       <div class="info-item">

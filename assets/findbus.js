@@ -79,17 +79,25 @@
         })
     : null;
 
+  // ─── 階梯式分母 ──────────────────────────────────────────────────
+  const TIERS = [8, 16, 34];
+  function tieredCap(count) {
+    for (const t of TIERS) { if (count < t) return t; }
+    return TIERS[TIERS.length - 1];
+  }
+
   // ─── 套用場次資料 ─────────────────────────────────────────────────
   function applyEventData(d) {
     if (!d) return;
     eventData = d;
-    const { capacity, min_to_run, display_count, price_return, price_oneway_addon } = d;
+    const { display_count, price_return, price_oneway_addon } = d;
 
-    const pct = Math.min(100, Math.round((display_count / capacity) * 100));
+    const cap = tieredCap(display_count);
+    const pct = Math.min(100, Math.round((display_count / cap) * 100));
     const fill = document.getElementById('seatsFill');
     const text = document.getElementById('seatsText');
     if (fill) fill.style.width = pct + '%';
-    if (text) text.textContent = `${display_count}/${capacity} 人已報名・${min_to_run} 人成團`;
+    if (text) text.textContent = `${display_count}/${cap} 人已報名`;
 
     const amountEl = document.querySelector('.card-price .amount');
     if (amountEl) amountEl.textContent = price_return;
@@ -317,11 +325,12 @@
       cards.forEach((card) => {
         const e = byId[card.dataset.eventId];
         if (!e) return;
-        const pct = Math.min(100, Math.round((e.display_count / e.capacity) * 100));
+        const cap = tieredCap(e.display_count);
+        const pct = Math.min(100, Math.round((e.display_count / cap) * 100));
         const fill = card.querySelector('.progress-fill');
         const text = card.querySelector('.event-progress span');
         if (fill) fill.style.width = pct + '%';
-        if (text) text.textContent = `${e.display_count}/${e.capacity} 人・${e.min_to_run} 人成團`;
+        if (text) text.textContent = `${e.display_count}/${cap} 人`;
       });
     } catch (e) {
       console.warn('[FindBus] 列表載入錯誤：', e);

@@ -185,33 +185,33 @@ with check (
 insert into public.events
   (id, artist, event_date, venue, capacity, min_to_run, price_return, price_oneway_addon, signup_padding, sort_order, meta)
 values
-  ('laufey', 'Laufey', '2026-05-15', '林口體育館', 34, 20, 550, 279, 3, 10, jsonb_build_object(
+  ('laufey', 'Laufey', '2026-05-15', '林口體育館', 34, 20, 550, 279, 0, 10, jsonb_build_object(
       'pickup_venues', jsonb_build_array('逢甲大學','台中市政府'),
-      'meeting',       '林口體育館（國立體育大學）正門停車場',
+      'meeting',       '林口體育館周邊指定地點集合',
       'depart',        '散場後 30 分鐘',
       'duration',      '約 2.5 小時'
   )),
   ('sunyenzi-0515', '孫燕姿', '2026-05-15', '台北大巨蛋', 34, 20, 550, 279, 3, 20, jsonb_build_object(
       'pickup_venues', jsonb_build_array('逢甲大學','台中市政府'),
-      'meeting',       '台北大巨蛋周邊指定集合點',
+      'meeting',       '台北大巨蛋周邊指定地點集合',
       'depart',        '散場後 30 分鐘',
       'duration',      '約 2.5 小時'
   )),
   ('sunyenzi-0517', '孫燕姿', '2026-05-17', '台北大巨蛋', 34, 20, 550, 279, 3, 21, jsonb_build_object(
       'pickup_venues', jsonb_build_array('逢甲大學','台中市政府'),
-      'meeting',       '台北大巨蛋周邊指定集合點',
+      'meeting',       '台北大巨蛋周邊指定地點集合',
       'depart',        '散場後 30 分鐘',
       'duration',      '約 2.5 小時'
   )),
   ('kinggnu-0606', 'King Gnu', '2026-06-06', '台北小巨蛋', 34, 20, 550, 279, 0, 30, jsonb_build_object(
       'pickup_venues', jsonb_build_array('逢甲大學','台中市政府'),
-      'meeting',       '台北小巨蛋指定集合點',
+      'meeting',       '台北小巨蛋周邊指定地點集合',
       'depart',        '散場後 30 分鐘',
       'duration',      '約 2.5 小時'
   )),
   ('kinggnu-0607', 'King Gnu', '2026-06-07', '台北小巨蛋', 34, 20, 550, 279, 0, 31, jsonb_build_object(
       'pickup_venues', jsonb_build_array('逢甲大學','台中市政府'),
-      'meeting',       '台北小巨蛋指定集合點',
+      'meeting',       '台北小巨蛋周邊指定地點集合',
       'depart',        '散場後 30 分鐘',
       'duration',      '約 2.5 小時'
   ))
@@ -221,7 +221,7 @@ on conflict (id) do nothing;
 delete from public.events where id = 'mayday';
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- 驗證：應該能看到 6 筆、真實 0 人、灌水 3+3+3+0+0+0 = 9
+-- 驗證：應該能看到 5 筆、真實 0 人、灌水 0+3+3+0+0 = 6
 -- ═══════════════════════════════════════════════════════════════════════════
 -- select * from event_counts order by sort_order;
 -- select * from admin_event_stats;
