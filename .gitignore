@@ -1,0 +1,16 @@
+# ── Local config / secrets ──
+.env
+.env.local
+.env.*.local
+
+# ── Editor / OS ──
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Dependency / build output（未來若加 build tool 用）──
+node_modules/
+dist/
+.cache/

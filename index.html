@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FindBus 找巴 — 社團包車，不用多花冤枉錢</title>
-<meta name="description" content="FindBus 找巴專為學生社團媒合遊覽車包車服務，透過更短的供應鏈取得合法登記車輛，報價透明、沒有隱藏費用，可省下數千元費用。">
-<meta name="keywords" content="社團包車, 遊覽車, 學生包車, 大學社團, 遊覽車比價, 包車報價, FindBus, 找巴">
+<title>找巴 FindBus｜演唱會接駁 × 團體包車</title>
+<meta name="description" content="陽明交大學生團隊創立。演唱會散場接駁、社團團體包車，幫你找到同級最划算的遊覽車。">
+<meta name="keywords" content="演唱會接駁, 散場接駁, 社團包車, 遊覽車, 團體包車, FindBus, 找巴">
 <meta name="author" content="FindBus 找巴">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://findbus.tw/">
@@ -13,15 +13,15 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="FindBus 找巴">
-<meta property="og:title" content="FindBus 找巴 — 社團包車，不用多花冤枉錢">
-<meta property="og:description" content="幫學生社團找到比自己找更划算的遊覽車，報價透明，沒有隱藏費用。">
+<meta property="og:title" content="找巴 FindBus｜演唱會接駁 × 團體包車">
+<meta property="og:description" content="陽明交大學生團隊創立。演唱會散場接駁、社團團體包車，幫你找到同級最划算的遊覽車。">
 <meta property="og:url" content="https://findbus.tw/">
 <meta property="og:locale" content="zh_TW">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="FindBus 找巴 — 社團包車，不用多花冤枉錢">
-<meta name="twitter:description" content="幫學生社團找到比自己找更划算的遊覽車，報價透明，沒有隱藏費用。">
+<meta name="twitter:title" content="找巴 FindBus｜演唱會接駁 × 團體包車">
+<meta name="twitter:description" content="陽明交大學生團隊創立。演唱會散場接駁、社團團體包車，幫你找到同級最划算的遊覽車。">
 
 <!-- Structured Data -->
 <script type="application/ld+json">
@@ -31,7 +31,7 @@
   "name": "FindBus 找巴",
   "alternateName": "找巴",
   "url": "https://findbus.tw/",
-  "description": "幫學生社團找到比自己找更划算的遊覽車，報價透明，沒有隱藏費用。",
+  "description": "陽明交大學生團隊創立。演唱會散場接駁、社團團體包車，幫你找到同級最划算的遊覽車。",
   "areaServed": "TW",
   "contactPoint": {
     "@type": "ContactPoint",
@@ -40,659 +40,316 @@
     "areaServed": "TW",
     "availableLanguage": ["zh-Hant"]
   },
-  "sameAs": ["https://line.me/ti/p/@findbus"]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "需要付額外的服務費嗎？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "不用。我們不向社團收取額外費用，你付的就是車輛的價格。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "車輛安全合法嗎？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "所有合作車輛均為合法營業登記之遊覽車，出車前會提供司機姓名、電話與車牌號碼。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "多快能拿到報價？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "通常在 1–2 個工作天內回覆。急件可以打電話直接聯繫。"
-      }
-    }
-  ]
+  "sameAs": ["https://line.me/R/ti/p/@findbus"]
 }
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
 :root {
-  --green-deep: #1a5c3a;
-  --green-mid: #22794d;
-  --green-bright: #06d6a0;
-  --green-pale: #e8f8f0;
-  --cream: #fafaf7;
-  --charcoal: #1a1a1a;
-  --slate: #4a4a4a;
-  --mist: #7a7a7a;
-  --white: #ffffff;
-  --line-green: #06C755;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
-  --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
-  --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
-  --radius: 12px;
+  --bg: #111010;
+  --bg-card: #1a1817;
+  --gold: #d4a853;
+  --gold-soft: #c9985a;
+  --cream: #f0e6d6;
+  --cream-dim: #b8a999;
+  --text: #e8ddd0;
+  --text-dim: #9a8e84;
+  --border: rgba(255,255,255,0.06);
+  --radius: 16px;
 }
- 
-* { margin: 0; padding: 0; box-sizing: border-box; }
- 
-html { 
-  scroll-behavior: smooth;
-  font-size: 16px;
-}
- 
+
+html { scroll-behavior: smooth; }
+
 body {
   font-family: 'Noto Sans TC', sans-serif;
-  color: var(--charcoal);
-  background: var(--cream);
+  background: var(--bg);
+  color: var(--text);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
-}
- 
-/* ===== HERO ===== */
-.hero {
-  min-height: 92vh;
+  overflow-x: hidden;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 2rem 1.5rem;
-  background: linear-gradient(160deg, var(--green-deep) 0%, var(--green-mid) 60%, #2a8f5e 100%);
-  color: var(--white);
-  position: relative;
-  overflow: hidden;
+  justify-content: center;
 }
- 
-.hero::before {
+
+/* Ambient */
+body::before {
   content: '';
-  position: absolute;
-  top: -50%;
-  right: -30%;
-  width: 80%;
-  height: 150%;
-  background: radial-gradient(ellipse, rgba(6,214,160,0.12) 0%, transparent 70%);
+  position: fixed; top: -20%; left: -15%;
+  width: 55vw; height: 55vw;
+  background: radial-gradient(circle, rgba(212,168,83,0.05) 0%, transparent 65%);
   pointer-events: none;
 }
- 
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  background: rgba(255,255,255,0.12);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255,255,255,0.18);
-  padding: 0.4rem 1rem;
-  border-radius: 50px;
-  font-size: 0.82rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  margin-bottom: 1.8rem;
-  animation: fadeDown 0.6s ease-out;
-}
- 
-.hero-badge::before {
+body::after {
   content: '';
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--green-bright);
-  animation: pulse 2s infinite;
+  position: fixed; bottom: -15%; right: -10%;
+  width: 45vw; height: 45vw;
+  background: radial-gradient(circle, rgba(192,122,122,0.04) 0%, transparent 65%);
+  pointer-events: none;
 }
- 
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
+
+.page-wrap {
+  position: relative; z-index: 1;
+  max-width: 520px; width: 100%;
+  padding: 0 24px;
+  display: flex; flex-direction: column;
+  align-items: center;
+  min-height: 100dvh;
+  justify-content: center;
 }
- 
+
+/* ── HERO ── */
+.hero {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.logo {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+  animation: fadeIn .6s ease-out both;
+}
+
 .hero h1 {
-  font-size: clamp(2rem, 6vw, 3.2rem);
+  font-size: 28px;
   font-weight: 900;
-  line-height: 1.3;
-  margin-bottom: 1.2rem;
-  letter-spacing: -0.02em;
-  animation: fadeDown 0.6s ease-out 0.1s both;
+  line-height: 1.35;
+  color: var(--cream);
+  margin-bottom: 12px;
+  animation: fadeIn .6s .1s ease-out both;
 }
- 
-.hero h1 span {
-  color: var(--green-bright);
-}
- 
-.hero-sub {
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
+.hero h1 .sep {
+  display: inline-block;
+  color: var(--gold);
+  margin: 0 6px;
   font-weight: 400;
-  opacity: 0.88;
-  max-width: 520px;
-  margin-bottom: 2.5rem;
-  line-height: 1.8;
-  animation: fadeDown 0.6s ease-out 0.2s both;
 }
- 
-.cta-btn {
+
+.hero-sub {
+  font-size: 14px;
+  color: var(--text-dim);
+  animation: fadeIn .6s .2s ease-out both;
+}
+
+/* ── CARDS ── */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color .3s, transform .15s;
+  animation: fadeIn .6s ease-out both;
+}
+.card-link:nth-child(1) { animation-delay: .3s; }
+.card-link:nth-child(2) { animation-delay: .4s; }
+
+.card-link:hover {
+  border-color: rgba(212,168,83,.2);
+  transform: translateY(-2px);
+}
+.card-link:active { transform: translateY(0); }
+
+.card-link::before {
+  content: '';
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(ellipse at 30% 0%, rgba(212,168,83,.06) 0%, transparent 60%);
+  opacity: 0; transition: opacity .3s;
+  pointer-events: none;
+}
+.card-link:hover::before { opacity: 1; }
+
+.card-tag {
+  display: inline-block;
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid rgba(212,168,83,.25);
+  padding: 3px 10px;
+  border-radius: 100px;
+  margin-bottom: 14px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: var(--cream-dim);
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.card-arrow {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
-  background: var(--line-green);
-  color: var(--white);
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gold-soft);
+}
+.card-arrow svg {
+  width: 16px; height: 16px;
+  transition: transform .2s;
+}
+.card-link:hover .card-arrow svg {
+  transform: translateX(4px);
+}
+
+/* Live dot for concert card */
+.live-dot {
+  display: inline-block;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #6fcf7c;
+  margin-right: 6px;
+  animation: pulse 2s infinite;
+  vertical-align: middle;
+}
+
+/* ── TRUST BAR ── */
+.trust-bar {
+  text-align: center;
+  margin-bottom: 32px;
+  animation: fadeIn .6s .5s ease-out both;
+}
+.trust-bar p {
+  font-size: 12.5px;
+  color: var(--text-dim);
+  line-height: 1.8;
+}
+.trust-bar .highlight {
+  color: var(--cream-dim);
+  font-weight: 500;
+}
+
+/* ── FOOTER ── */
+.footer {
+  text-align: center;
+  padding-bottom: 36px;
+  animation: fadeIn .6s .55s ease-out both;
+}
+.footer-brand {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--gold-soft);
   text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 700;
-  padding: 1rem 2.2rem;
-  border-radius: 50px;
-  transition: all 0.25s ease;
-  box-shadow: 0 4px 20px rgba(6,199,85,0.35);
-  animation: fadeDown 0.6s ease-out 0.3s both;
+  padding: 7px 14px;
+  border-radius: 100px;
+  border: 1px solid rgba(212,168,83,.18);
+  transition: all .2s;
 }
- 
-.cta-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 28px rgba(6,199,85,0.45);
+.footer-link:hover {
+  background: rgba(212,168,83,.08);
+  border-color: rgba(212,168,83,.3);
 }
- 
-.cta-btn svg {
-  width: 22px;
-  height: 22px;
-}
- 
-.hero-scroll {
-  position: absolute;
-  bottom: 2rem;
-  font-size: 0.78rem;
-  opacity: 0.5;
-  letter-spacing: 0.1em;
-  animation: bounce 2s infinite;
-}
- 
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(6px); }
-}
- 
-@keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-16px); }
+.footer-link svg { width: 13px; height: 13px; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
- 
-/* ===== PROBLEM ===== */
-.problem {
-  padding: 5rem 1.5rem;
-  max-width: 680px;
-  margin: 0 auto;
-  text-align: center;
-}
- 
-.section-label {
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--green-mid);
-  margin-bottom: 1rem;
-}
- 
-.problem h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  font-weight: 900;
-  line-height: 1.4;
-  margin-bottom: 1.5rem;
-  letter-spacing: -0.01em;
-}
- 
-.problem p {
-  font-size: 1.05rem;
-  color: var(--slate);
-  line-height: 1.9;
-}
- 
-.problem .highlight-box {
-  background: var(--white);
-  border-left: 3px solid var(--green-bright);
-  padding: 1.2rem 1.5rem;
-  margin-top: 2rem;
-  border-radius: 0 var(--radius) var(--radius) 0;
-  text-align: left;
-  font-size: 1rem;
-  color: var(--slate);
-  box-shadow: var(--shadow-sm);
-}
- 
-.highlight-box strong {
-  color: var(--green-deep);
-}
- 
-/* ===== STEPS ===== */
-.steps {
-  padding: 5rem 1.5rem;
-  background: var(--white);
-}
- 
-.steps-inner {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
- 
-.steps h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  font-weight: 900;
-  margin-bottom: 3rem;
-  letter-spacing: -0.01em;
-}
- 
-.steps-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-}
- 
-@media (min-width: 640px) {
-  .steps-grid { grid-template-columns: repeat(3, 1fr); }
-}
- 
-.step-card {
-  background: var(--cream);
-  border-radius: var(--radius);
-  padding: 2rem 1.5rem;
-  text-align: center;
-  position: relative;
-  transition: transform 0.2s ease;
-}
- 
-.step-card:hover {
-  transform: translateY(-3px);
-}
- 
-.step-num {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--green-deep);
-  color: var(--white);
-  font-weight: 700;
-  font-size: 1.1rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
- 
-.step-card h3 {
-  font-size: 1.05rem;
-  font-weight: 700;
-  margin-bottom: 0.6rem;
-}
- 
-.step-card p {
-  font-size: 0.92rem;
-  color: var(--mist);
-  line-height: 1.6;
-}
- 
-/* ===== WHY CHEAPER ===== */
-.why {
-  padding: 5rem 1.5rem;
-  max-width: 680px;
-  margin: 0 auto;
-}
- 
-.why h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  font-weight: 900;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  letter-spacing: -0.01em;
-}
- 
-.why-content {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 2rem;
-  box-shadow: var(--shadow-sm);
-}
- 
-.why-item {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  padding: 1rem 0;
-}
- 
-.why-item + .why-item {
-  border-top: 1px solid rgba(0,0,0,0.05);
-}
- 
-.why-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  background: var(--green-pale);
-  color: var(--green-deep);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-size: 1.1rem;
-}
- 
-.why-item h4 {
-  font-size: 0.95rem;
-  font-weight: 700;
-  margin-bottom: 0.3rem;
-}
- 
-.why-item p {
-  font-size: 0.9rem;
-  color: var(--mist);
-  line-height: 1.6;
-}
- 
-/* ===== TRUST ===== */
-.trust {
-  padding: 4rem 1.5rem;
-  background: var(--white);
-  text-align: center;
-}
- 
-.trust-inner {
-  max-width: 600px;
-  margin: 0 auto;
-}
- 
-.trust h2 {
-  font-size: clamp(1.3rem, 3.5vw, 1.8rem);
-  font-weight: 900;
-  margin-bottom: 1.5rem;
-}
- 
-.trust-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
- 
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  background: var(--green-pale);
-  color: var(--green-deep);
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
-  font-size: 0.85rem;
-  font-weight: 500;
-}
- 
-.badge svg {
-  width: 15px;
-  height: 15px;
-}
- 
-.trust-note {
-  font-size: 0.92rem;
-  color: var(--mist);
-  line-height: 1.7;
-  margin-bottom: 2rem;
-}
- 
-.trust-meet {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: var(--cream);
-  border: 1px solid rgba(0,0,0,0.06);
-  padding: 0.8rem 1.3rem;
-  border-radius: var(--radius);
-  font-size: 0.88rem;
-  color: var(--slate);
-  font-weight: 500;
-}
- 
-/* ===== FAQ ===== */
-.faq {
-  padding: 4rem 1.5rem;
-  max-width: 640px;
-  margin: 0 auto;
-}
- 
-.faq h2 {
-  font-size: clamp(1.3rem, 3.5vw, 1.8rem);
-  font-weight: 900;
-  margin-bottom: 2rem;
-  text-align: center;
-}
- 
-.faq-item {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 1.3rem 1.5rem;
-  margin-bottom: 0.8rem;
-  box-shadow: var(--shadow-sm);
-}
- 
-.faq-q {
-  font-weight: 700;
-  font-size: 0.95rem;
-  margin-bottom: 0.5rem;
-  color: var(--charcoal);
-}
- 
-.faq-a {
-  font-size: 0.9rem;
-  color: var(--mist);
-  line-height: 1.7;
-}
- 
-/* ===== CTA BOTTOM ===== */
-.cta-bottom {
-  padding: 5rem 1.5rem;
-  text-align: center;
-  background: linear-gradient(160deg, var(--green-deep) 0%, var(--green-mid) 100%);
-  color: var(--white);
-}
- 
-.cta-bottom h2 {
-  font-size: clamp(1.5rem, 4vw, 2.2rem);
-  font-weight: 900;
-  margin-bottom: 0.8rem;
-}
- 
-.cta-bottom p {
-  opacity: 0.8;
-  margin-bottom: 2rem;
-  font-size: 1rem;
-}
- 
-.cta-bottom .cta-btn {
-  animation: none;
-}
- 
-/* ===== FOOTER ===== */
-footer {
-  padding: 2rem 1.5rem;
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--mist);
-  background: var(--charcoal);
-}
- 
-footer a {
-  color: var(--green-bright);
-  text-decoration: none;
-}
- 
-footer .footer-contact {
-  margin-top: 0.5rem;
-}
- 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 480px) {
-  .hero { min-height: 85vh; padding: 2rem 1.2rem; }
-  .problem, .why, .faq { padding: 3.5rem 1.2rem; }
-  .steps { padding: 3.5rem 1.2rem; }
-  .cta-bottom { padding: 3.5rem 1.2rem; }
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .4; }
 }
 </style>
 </head>
 <body>
- 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-badge">服務進行中</div>
-  <h1>社團包車<br><span>不用多花冤枉錢</span></h1>
-  <p class="hero-sub">我們有一般管道找不到的車源，幫你拿到更划算的價格。報價透明，沒有隱藏費用。</p>
-  <a href="https://line.me/ti/p/@findbus" class="cta-btn">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
-    LINE 諮詢
-  </a>
-  <div class="hero-scroll">↓ 往下了解更多</div>
-</section>
- 
-<!-- PROBLEM -->
-<section class="problem">
-  <div class="section-label">你知道嗎</div>
-  <h2>你上網找到的車行，報價通常都差不多</h2>
-  <p>不是因為那就是合理價格，而是因為你找到的都是同一類——有 Google 商家頁面的大型車行。市場上存在品質相同但價格更低的車源，只是一般管道很難接觸到。</p>
-  <div class="highlight-box">
-    <strong>實際案例：</strong>同一條路線，一般管道報價 28,000 元，透過我們的車源網絡只要 25,000 元——<strong>省下 3,000 元</strong>，車輛規格完全相同。
-  </div>
-</section>
- 
-<!-- STEPS -->
-<section class="steps">
-  <div class="steps-inner">
-    <h2>三步搞定</h2>
-    <div class="steps-grid">
-      <div class="step-card">
-        <div class="step-num">1</div>
-        <h3>告訴我們需求</h3>
-        <p>人數、日期、上下車地點——在 LINE 上傳訊息就好</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">2</div>
-        <h3>我們幫你找車</h3>
-        <p>從合作車源中找到最划算的方案，1–2 天內回覆</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">3</div>
-        <h3>確認出發</h3>
-        <p>出車前提供司機姓名、電話與車牌，安心上路</p>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<!-- WHY CHEAPER -->
-<section class="why">
-  <h2>為什麼我們能更便宜？</h2>
-  <div class="why-content">
-    <div class="why-item">
-      <div class="why-icon">🔗</div>
-      <div>
-        <h4>更短的供應鏈</h4>
-        <p>直接對接車源，省去中間層加價，你付的就是車的價格</p>
-      </div>
-    </div>
-    <div class="why-item">
-      <div class="why-icon">🚌</div>
-      <div>
-        <h4>同規格的車輛</h4>
-        <p>合法營業登記的遊覽車，跟你在大車行訂到的是同等級的車</p>
-      </div>
-    </div>
-    <div class="why-item">
-      <div class="why-icon">💰</div>
-      <div>
-        <h4>報價透明</h4>
-        <p>沒有隱藏費用，價格在出車前全部確認清楚</p>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<!-- TRUST -->
-<section class="trust">
-  <div class="trust-inner">
-    <h2>關於我們</h2>
-    <div class="trust-badges">
-      <span class="badge">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-        陽明交通大學學生創立
+<div class="page-wrap">
+
+  <section class="hero">
+    <div class="logo">找巴 FindBus</div>
+    <h1>演唱會接駁<span class="sep">×</span>團體包車</h1>
+    <p class="hero-sub">陽明交大學生團隊創立，幫你找到同級最划算的遊覽車</p>
+  </section>
+
+  <div class="cards">
+
+    <a href="/go.html" class="card-link">
+      <div class="card-tag"><span class="live-dot"></span>場次報名中</div>
+      <div class="card-title">演唱會散場接駁</div>
+      <div class="card-desc">散場直上遊覽車，不趕高鐵不擠捷運<br>睡一覺就到家</div>
+      <span class="card-arrow">
+        查看場次
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </span>
-      <span class="badge">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        合法登記車輛
+    </a>
+
+    <a href="/charter.html" class="card-link">
+      <div class="card-tag">社團 / 團體</div>
+      <div class="card-title">團體包車</div>
+      <div class="card-desc">團體出遊？比你自己找車更方便，更便宜</div>
+      <span class="card-arrow">
+        了解更多
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </span>
-      <span class="badge">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-        已服務大專院校學生組織
-      </span>
+    </a>
+
+  </div>
+
+  <div class="trust-bar">
+    <p>
+      <span class="highlight">合法營業遊覽車</span>・含乘客險<br>
+      LINE 即時聯繫・找得到人
+    </p>
+  </div>
+
+  <footer class="footer">
+    <p class="footer-brand">找巴 FindBus</p>
+    <div class="footer-links">
+      <a href="https://line.me/R/ti/p/@findbus" class="footer-link" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+        LINE
+      </a>
+      <a href="tel:0966454767" class="footer-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        0966-454-767
+      </a>
     </div>
-    <p class="trust-note">由陽明交通大學學生創立，從服務大專院校學生組織開始。我們自己也是學生，理解社團經費有限、幹部時間寶貴。</p>
-    <div class="trust-meet">
-      📍 有任何疑慮，歡迎約在校園內當面聊
-    </div>
-  </div>
-</section>
- 
-<!-- FAQ -->
-<section class="faq">
-  <h2>常見問題</h2>
-  <div class="faq-item">
-    <div class="faq-q">需要付額外的服務費嗎？</div>
-    <div class="faq-a">不用。我們不向社團收取額外費用，你付的就是車輛的價格。</div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-q">車輛安全合法嗎？</div>
-    <div class="faq-a">所有合作車輛均為合法營業登記之遊覽車，出車前會提供司機姓名、電話與車牌號碼。</div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-q">多快能拿到報價？</div>
-    <div class="faq-a">通常在 1–2 個工作天內回覆。急件可以打電話直接聯繫。</div>
-  </div>
-</section>
- 
-<!-- CTA BOTTOM -->
-<section class="cta-bottom">
-  <h2>下次社團出遊前，先問問我們</h2>
-  <p>一則 LINE 訊息，可能幫社團省下好幾千塊</p>
-  <a href="https://line.me/ti/p/@findbus" class="cta-btn">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
-    LINE 諮詢
-  </a>
-</section>
- 
-<!-- FOOTER -->
-<footer>
-  <div>© 2026 FindBus 找巴</div>
-  <div class="footer-contact">
-    <a href="https://line.me/ti/p/@findbus">LINE 官方帳號</a> ・ 聯絡電話：0966-454-767
-  </div>
-</footer>
- 
+  </footer>
+
+</div>
 </body>
 </html>
