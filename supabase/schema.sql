@@ -203,13 +203,13 @@ values
       'depart',        '散場後 30 分鐘',
       'duration',      '約 2.5 小時'
   )),
-  ('kinggnu-0606', 'King Gnu', '2026-06-06', '台北小巨蛋', 34, 20, 550, 279, 0, 30, jsonb_build_object(
+  ('kinggnu-0606', 'King Gnu', '2026-06-06', '台北小巨蛋', 34, 20, 590, 279, 0, 30, jsonb_build_object(
       'pickup_venues', jsonb_build_array('逢甲大學','台中市政府'),
       'meeting',       '台北小巨蛋周邊指定地點集合',
       'depart',        '散場後 30 分鐘',
       'duration',      '約 2.5 小時'
   )),
-  ('kinggnu-0607', 'King Gnu', '2026-06-07', '台北小巨蛋', 34, 20, 550, 279, 0, 31, jsonb_build_object(
+  ('kinggnu-0607', 'King Gnu', '2026-06-07', '台北小巨蛋', 34, 20, 590, 279, 0, 31, jsonb_build_object(
       'pickup_venues', jsonb_build_array('逢甲大學','台中市政府'),
       'meeting',       '台北小巨蛋周邊指定地點集合',
       'depart',        '散場後 30 分鐘',
